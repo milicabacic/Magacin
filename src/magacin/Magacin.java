@@ -1,9 +1,14 @@
 package magacin;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import magacininterfejs.MagacinInterfejs;
 
 public class Magacin implements MagacinInterfejs{
 
+	private List<Artikal> artikli = new LinkedList<Artikal>();
+	
 	@Override
 	public void dodajArtikal(Artikal artikal) {
 		
