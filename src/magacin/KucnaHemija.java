@@ -12,7 +12,8 @@ public class KucnaHemija extends Artikal {
 	}
 
 	public void setRokVazenja(Date rokVazenja) {
-		this.rokVazenja = rokVazenja;
+		if(rokVazenja!=null && rokVazenja.after(new Date()))
+			this.rokVazenja = rokVazenja;
 	}
 
 	@Override
