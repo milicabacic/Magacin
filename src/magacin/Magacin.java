@@ -11,7 +11,7 @@ public class Magacin implements MagacinInterfejs{
 	
 	@Override
 	public void dodajArtikal(Artikal artikal) {
-		
+		artikli.add(artikal);
 	}
 
 	@Override
